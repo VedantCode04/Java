@@ -32,7 +32,7 @@ class students {
         System.out.println("SPI is " + Spi);
     }
 }
-class hello {
+class Main {
     public static void main(String[] args)
     {
         Scanner s = new Scanner(System.in);
