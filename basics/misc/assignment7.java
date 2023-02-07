@@ -32,16 +32,18 @@ class students {
         System.out.println("SPI is " + Spi);
     }
 }
-class Main {
+
+class main {
     public static void main(String[] args)
     {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         students[] obj;
         obj = new students[n];
+
+        for (int i = 0; i < n; ++i) {
+            obj[i] = new students();
+            obj[i].calculate();
+        }
     }
-}
-for (int i = 0; i < n; ++i) {
-    obj[i] = new students();
-    obj[i].calculate();
 }
