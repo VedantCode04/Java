@@ -10,6 +10,9 @@ class main{
         Scanner s = new Scanner(System.in);
         person p = new person();
 
+        System.out.println("Vedant Patel IU2141230208");
+        System.out.println("-------------------------");
+
         System.out.print("Enter name: ");
         p.name = s.nextLine();
         System.out.print("Enter age: ");
@@ -17,8 +20,9 @@ class main{
         System.out.print("Enter salary: ");
         p.salary = s.nextInt();
 
-        System.out.println("name is: "+p.name);
-        System.out.println("age is: "+p.age);
-        System.out.println("salary is: "+p.salary);
+        System.out.println("\nDisplaying the contents of the object: \n");
+        System.out.println("Person name:"+p.name);
+        System.out.println("Person age:"+p.age);
+        System.out.println("Person salary:"+p.salary);
     }
 }
