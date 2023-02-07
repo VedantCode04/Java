@@ -1,9 +1,12 @@
 import java.util.Scanner;
 
-class test {
+class main {
     // sort string 3.2
     public static void main(String[] args)
     {
+        System.out.println("Vedant Patel IU2141230208");
+        System.out.println("-------------------------");
+
         Scanner s = new Scanner(System.in);
         System.out.println("enter string: ");
         char[] arr = s.next().toCharArray();
