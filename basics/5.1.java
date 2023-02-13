@@ -39,19 +39,23 @@
 	}
 
 	class SalariedEmployee extends Employee{
-		float salary, hra, da;
+		double salary, hra, da;
 
-		public void allowance(){
+		SalariedEmployee() {
 			System.out.println("Enter salary: ");
 			salary = s.nextFloat();
+			s.nextLine();
+		}
+
+		void allowance(){
 
 			if(gender == 'F'){
-				hra = ((float) 0.1) * salary;
+				hra =  0.1 * salary;
 			} else {
-				hra = ((float) 0.09) * salary;
+				hra =  0.09 * salary;
 			}
 
-			da = ((float) 0.05) * salary;
+			da =  0.05 * salary;
 
 			salary = salary + hra + da;
 		}
@@ -62,29 +66,46 @@
 			System.out.println();
 
 		}
-	}
 
-	class main{
 		public static void main(String[] args) {
 
 			System.out.println("\n**************************");
-			System.out.println("Vedant Patel IU2141230208");
-			System.out.println("**************************");
+	 		System.out.println("Vedant Patel IU2141230208");
+	 		System.out.println("**************************");
 
-			SalariedEmployee person = new SalariedEmployee();
+			SalariedEmployee emp = new SalariedEmployee();
 
-			person.input_data();
+			emp.input_data();
+			emp.display_data();
+			emp.allowance();
+			emp.increment();
 
-			person.display_data();
-
-			person.allowance();
-
-			person.increment();
-
+			System.out.println("Gross salary = " + emp.salary);
 			System.out.println("------------------------------");
-			System.out.println("\nGross salary = " + person.salary);
-			System.out.println("------------------------------");
-
 		}
 	}
+
+	// class main{
+	// 	public static void main(String[] args) {
+
+	// 		System.out.println("\n**************************");
+	// 		System.out.println("Vedant Patel IU2141230208");
+	// 		System.out.println("**************************");
+
+	// 		SalariedEmployee person = new SalariedEmployee();
+
+	// 		person.input_data();
+
+	// 		person.display_data();
+
+	// 		person.allowance();
+
+	// 		person.increment();
+
+	// 		System.out.println("------------------------------");
+	// 		System.out.println("\nGross salary = " + person.salary);
+	// 		System.out.println("------------------------------");
+
+	// 	}
+	// }
 
