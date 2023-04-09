@@ -31,9 +31,17 @@ class Main {
     {
         System.out.println("\nVEDANT PATEL IU2141230208\n");
 
-        Thread a = new Thread(new printA());
-        Thread b = new Thread(new printB());
-        Thread i = new Thread(new print100());
+        printA a1 = new printA();
+        printB b1 = new printB();
+        print100 i1 = new print100();
+
+        Thread a = new Thread(a1);
+        Thread b = new Thread(b1);
+        Thread i = new Thread(i1);
+        
+        //Thread a = new Thread(new printA());
+        //Thread b = new Thread(new printb());
+        //Thread i = new Thread(new print100()); is also valid code replacing the above two paragraphs
 
         a.start();
         b.start();
