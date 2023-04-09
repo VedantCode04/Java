@@ -17,6 +17,7 @@ public class main {
         B3 obj2 = new B3();
         A3 obj3 = new B3();
 
+        System.out.println("VEDANT PATEL IU2141230208\n");
         obj1.hello("Object 1");
         obj2.hello("Object 2");
         obj3.hello("Object 3");
